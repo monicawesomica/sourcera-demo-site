@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sourcera · MyMorning briefing</title>
+  <meta name="description" content="Explore the Sourcera news collection by date, language and publisher.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235a3dee'/%3E%3Ctext x='8' y='24' fill='white' font-size='25' font-family='serif'%3Es%3C/text%3E%3C/svg%3E">
+  <style>:root{--ink:#192132;--muted:#667084;--purple:#5939e8;--line:#e5e7ef;--bg:#f7f8fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.5}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #937dff;outline-offset:4px}.skip{position:absolute;left:16px;top:-80px;background:white;padding:12px;z-index:10}.skip:focus{top:10px}.topbar{height:88px;padding:0 5%;display:flex;align-items:center;gap:30px;background:white;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;text-decoration:none;font-size:30px;font-weight:750;letter-spacing:-1.5px}.brand-mark{width:35px;height:35px;display:grid;place-items:center;color:white;background:var(--purple);border-radius:11px;font-family:Georgia,serif;font-size:34px;font-style:italic;margin-right:10px;line-height:1}.brand-period{color:var(--purple)}.project-tag{font-size:12px;letter-spacing:1.8px;color:var(--muted);border-left:1px solid var(--line);padding-left:28px}.local-label{margin-left:auto;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}.local-label span{width:7px;height:7px;border-radius:50%;background:#28946a}main{max-width:1440px;margin:auto;padding:38px 5% 0}.intro{position:relative;overflow:hidden;background:#eeebff;border:1px solid #e3ddfc;border-radius:20px;padding:35px 40px 30px}.eyebrow{font-size:11px;font-weight:750;letter-spacing:1.7px;color:var(--purple)}h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(36px,3.8vw,53px);line-height:1.13;letter-spacing:-1.8px;margin:13px 0 14px}h1 span{color:var(--purple)}.intro p{font-size:15px;color:#525773;margin:0}.intro-note{font-size:12px;color:#665e89;margin-top:22px;display:flex;gap:8px;align-items:center}.note-icon{color:var(--purple);font-size:18px}.hero-decoration{position:absolute;right:70px;top:65px;height:170px;display:flex;align-items:center;gap:13px;transform:rotate(-9deg);opacity:.8}.wave{width:17px;border-radius:20px;background:linear-gradient(#8366ef,#c2b5f8);height:40px}.w2,.w8{height:78px}.w3,.w7{height:110px}.w4,.w6{height:150px}.w5{height:180px}.workspace{display:grid;grid-template-columns:260px minmax(0,1fr);gap:30px;margin-top:32px;align-items:start}.filters{background:white;border:1px solid var(--line);border-radius:15px;padding:23px 21px;position:sticky;top:20px}.filter-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:24px}h2{font-size:22px;letter-spacing:-.6px;margin:0}.filter-title h2{font-size:17px;letter-spacing:-.3px}.text-button{background:none;border:0;padding:5px 0;color:var(--purple);font-size:12px}.filters label{display:block;font-size:13px;font-weight:650;margin:22px 0 8px}select{appearance:none;width:100%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23667084' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;border:1px solid #dce0e9;border-radius:8px;color:var(--ink);padding:11px 30px 11px 11px;font-size:13px;min-height:43px;text-overflow:ellipsis}.field-help{font-size:11px;color:var(--muted);margin:7px 0 0}.dataset-note{border-top:1px solid var(--line);margin-top:28px;padding-top:24px}.tiny-label{font-size:10px;letter-spacing:1.4px;color:var(--muted);font-weight:700;display:block}.dataset-note strong{display:block;font-size:23px;margin-top:6px;letter-spacing:-.7px}.dataset-note p{font-size:12px;color:var(--muted);margin:5px 0 12px}.license-note{font-size:11px;color:#727b8c;background:#f7f8fc;padding:12px;border-radius:8px;line-height:1.6}.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:13px;background:white;padding:20px 0;margin-bottom:28px}.stats>div{padding:0 23px;border-right:1px solid var(--line)}.stats>div:last-child{border:0}.stats span{display:block;font-size:12px;color:var(--muted)}.stats strong{display:block;font-size:30px;font-weight:650;letter-spacing:-1px;margin-top:3px}.stats>div:first-child strong{color:var(--purple)}.news-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:15px}.news-toolbar .eyebrow{margin-bottom:5px;font-size:10px}.sort-label{font-size:12px;color:var(--muted)}.search-wrap{display:flex;align-items:center;border:1px solid var(--line);border-radius:9px;background:white;padding:0 14px;gap:10px;color:#818a9c}.search-wrap input{width:100%;border:0;outline:0;min-width:0;background:transparent;padding:13px 0;font-size:14px;color:var(--ink)}.search-wrap:focus-within{box-shadow:0 0 0 2px #b8a9fa}.search-wrap input:focus-visible{outline:0}.search-wrap span{font-size:11px;white-space:nowrap;color:var(--muted)}.status{font-size:12px;color:var(--muted);margin:15px 0 12px;min-height:18px}.results{display:grid;gap:12px;outline:none}.article{position:relative;background:white;border:1px solid var(--line);border-radius:12px;padding:21px 23px;transition:border-color .15s,box-shadow .15s}.article:hover{border-color:#c9bff5;box-shadow:0 3px 16px #372b6610}.article-meta{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);flex-wrap:wrap}.article-meta .outlet{font-weight:650;color:#4d5669}.outlet-mark{width:23px;height:23px;display:inline-grid;place-items:center;font-size:10px;color:#6655a8;background:#f0edfa;border-radius:6px;font-weight:750}.language-badge{padding:2px 7px;border:1px solid #e7e7ef;border-radius:4px;font-size:10px;background:#fafafe}.article h3{font-size:18px;line-height:1.45;letter-spacing:-.25px;font-weight:600;margin:13px 0 16px;max-width:92%}.article-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px}.source-link{display:inline-flex;align-items:center;gap:6px;color:var(--purple);font-size:12px;font-weight:650;text-decoration:none}.source-link:hover{text-decoration:underline}.source-host{font-size:11px;color:#7a8294;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:50%}.pagination{display:flex;justify-content:space-between;align-items:center;padding:24px 0 5px;font-size:12px;color:var(--muted)}[hidden]{display:none!important}.pagination button,.retry{background:white;border:1px solid #dce0e9;border-radius:7px;padding:9px 16px;color:var(--ink);font-size:12px}.pagination button:disabled{opacity:.4;cursor:default}.empty{background:white;border:1px dashed #d8d3e8;border-radius:12px;padding:42px 22px;text-align:center}.empty h3{font-size:18px;margin:0 0 8px}.empty p{font-size:14px;color:var(--muted);margin:0 0 16px}.empty button{background:var(--purple);color:white;border:0;padding:10px 17px;border-radius:7px;font-size:13px}footer{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);margin:40px 0 0;padding:23px 0;font-size:11px;color:var(--muted)}footer b{color:#b8b3ca;margin:0 10px}@media(min-width:1500px){.topbar{padding-left:max(5%,calc((100vw - 1296px)/2));padding-right:max(5%,calc((100vw - 1296px)/2))}}@media(max-width:1050px){.hero-decoration{right:30px;opacity:.4;transform:scale(.8) rotate(-9deg)}.workspace{grid-template-columns:225px minmax(0,1fr);gap:20px}.stats>div{padding:0 14px}.stats span{font-size:11px}.project-tag{font-size:10px}.article h3{max-width:100%}}@media(max-width:720px){.topbar{height:72px;padding:0 5%}.brand{font-size:26px}.project-tag{display:none}.local-label{font-size:11px}main{padding-top:22px}.intro{padding:27px 24px}.intro p{max-width:260px;font-size:14px}.hero-decoration{right:-65px;top:50px;opacity:.16}.intro-note{font-size:11px}.workspace{display:block;margin-top:22px}.filters{position:static;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;padding:18px;margin-bottom:22px}.filter-title{grid-column:1/-1;margin:0 0 4px}.filters label{grid-column:1/-1;margin:12px 0 0}.filters select{grid-column:1/-1;font-size:14px}.field-help{grid-column:1/-1;margin:0}.dataset-note,.license-note{display:none}.stats{padding:16px 0;margin-bottom:22px}.stats>div{padding:0 10px}.stats span{font-size:10px;line-height:1.5}.stats strong{font-size:27px}.sort-label{display:none}.search-wrap span{display:none}.article{padding:18px}.article h3{font-size:17px}.article-meta{gap:7px}.news-toolbar h2{font-size:23px}footer{flex-direction:column;gap:6px;margin-top:28px}}
+.view-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 16px}.view-tabs{display:inline-flex;gap:4px;background:#eeedf7;padding:4px;border-radius:9px}.view-tabs button{border:0;background:transparent;border-radius:6px;padding:10px 15px;font-size:14px;color:#555e71;font-weight:600}.view-tabs .active{background:white;color:var(--purple);box-shadow:0 1px 5px #281c4914}#grouping-label{font-size:12px;color:var(--muted)}.story-notice{font-size:13px;line-height:1.6;background:#eeebff;color:#514670;border:1px solid #e0d9fa;border-radius:9px;padding:14px 16px;margin-bottom:16px}.story-badge{color:var(--purple);background:#f0ecff;padding:4px 9px;border-radius:5px;font-size:12px;font-weight:700}.reported-details{background:#f8f9fd;border-radius:8px;padding:15px 17px;margin:18px 0}.reported-details h4{margin:0 0 9px;font-size:14px}.reported-details ul{padding-left:18px;margin:0}.reported-details li{font-size:14px;line-height:1.7;margin-bottom:10px}.detail-source{display:block;font-size:12px;color:var(--purple)}.detail-disclaimer{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px}.story-sources{border-top:1px solid var(--line);padding-top:13px}.story-sources summary{font-size:14px;font-weight:600;color:var(--purple);cursor:pointer;min-height:30px}.story-sources ul{padding:0;list-style:none;margin-bottom:0}.story-sources li{border-top:1px solid var(--line);padding:13px 0}.story-sources li a{font-size:14px;text-decoration:none;display:block;margin-top:4px}.story-sources li a:hover{text-decoration:underline}.source-meta{font-size:12px;color:var(--muted)}@media(max-width:720px){.view-controls{display:block}#grouping-label{display:block;margin-top:10px}.view-tabs{width:100%;display:flex}.view-tabs button{flex:1;padding:10px 8px;font-size:13px}}
+.onboarding{padding:24px 0 15px}.onboarding h1{font-size:clamp(38px,4.5vw,62px);margin-top:16px}.welcome-copy{font-size:17px;color:#525c71;max-width:640px;margin:18px 0 9px}.example-note{font-size:12px;color:var(--muted);margin-bottom:28px}.profile-fieldset{border:0;margin:0;padding:0;min-width:0}.profile-fieldset legend{font-size:14px;font-weight:650;margin-bottom:14px}.profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.profile-choice{position:relative;display:block;cursor:pointer}.profile-choice input{position:absolute;right:19px;top:20px;accent-color:var(--purple);width:18px;height:18px;z-index:1}.profile-body{height:100%;display:flex;flex-direction:column;background:white;border:1px solid #dfe2ed;border-radius:14px;padding:23px;transition:box-shadow .15s,border-color .15s}.profile-choice input:checked+.profile-body{border:2px solid var(--purple);padding:22px;background:#f4f1ff;box-shadow:0 3px 18px #5939e812}.profile-choice input:focus-visible+.profile-body{outline:3px solid #b2a1fa;outline-offset:3px}.profile-symbol{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;color:var(--purple);background:#efebfc;font-size:23px;margin-bottom:18px}.profile-body>strong{font-size:17px;letter-spacing:-.3px;line-height:1.4;margin-bottom:9px;padding-right:4px}.profile-description{font-size:14px;color:#5c667b;line-height:1.65;margin-bottom:20px}.profile-topics{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}.profile-topics>span{font-size:11px;color:#63548f;border:1px solid #e2dcf1;border-radius:5px;padding:3px 7px;background:#faf9fe}.onboarding-actions{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:25px;margin-top:28px}.onboarding-actions strong{font-size:14px}.onboarding-actions p{font-size:13px;color:var(--muted);margin:5px 0}.primary-button{border:0;border-radius:9px;background:var(--purple);color:white;padding:14px 24px;font-size:15px;font-weight:600;white-space:nowrap}.primary-button:disabled{background:#ddd9ed;color:#777183;cursor:default}.secondary-button{border:1px solid #d5ccf4;border-radius:8px;background:white;padding:10px 15px;color:var(--purple);font-size:14px;font-weight:600}.listener-banner{display:flex;justify-content:space-between;align-items:center;gap:18px;border:1px solid #e1dbf6;background:#f0ecff;border-radius:12px;padding:18px 23px;margin-bottom:22px}.listener-banner strong{display:block;font-size:19px;letter-spacing:-.4px;margin:4px 0}.listener-banner p{font-size:13px;color:#655d7d;margin:0}.relevance-note{font-size:12px;color:#5d478f;background:#f4f0ff;display:inline-block;border-radius:5px;padding:5px 9px;margin:0 0 15px}@media(max-width:1000px){.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.profile-grid{grid-template-columns:1fr}.onboarding-actions{align-items:stretch;flex-direction:column}.primary-button{width:100%}.listener-banner{align-items:flex-start;padding:17px;flex-direction:column}.onboarding h1{font-size:41px}.profile-description{font-size:15px}.profile-body>strong{font-size:18px}}
+
+/* MyMorning briefing workspace */
+.workspace-nav{display:flex;gap:8px;border-bottom:1px solid var(--line);margin-bottom:28px;padding-bottom:12px}.workspace-nav button{padding:11px 18px;border:1px solid transparent;background:transparent;border-radius:9px;color:#525c71;font-size:16px;font-weight:650}.workspace-nav button.active{background:var(--purple);color:white}.briefing-hero{padding:8px 0 29px}.briefing-hero h1{font-size:clamp(38px,4.7vw,62px)}.briefing-hero p{font-size:18px;color:#555e73;margin:0 0 17px;line-height:1.7}.briefing-pill{display:inline-block;border:1px solid #dcd5f5;background:#f1edff;color:#59468b;border-radius:30px;padding:6px 12px;font-size:14px}.briefing-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:28px;align-items:start}.briefing-form{background:white;border:1px solid var(--line);border-radius:16px;padding:25px}.briefing-form h2{font-size:23px;margin-bottom:22px}.briefing-form>label,.briefing-form legend{display:block;font-size:15px;font-weight:650;margin:22px 0 8px}.briefing-form>label:first-of-type{margin-top:0}.briefing-form select{font-size:15px;min-height:46px}.briefing-form select:disabled{opacity:1;color:#656b7c;background-color:#f6f7fa}.briefing-form .field-help{font-size:14px;line-height:1.55;margin:8px 0}.briefing-form fieldset{border:0;padding:0;margin:0;min-width:0}.briefing-form legend{padding:0;padding-top:22px;margin:0 0 10px}.level-options{display:grid;gap:8px}.level-options label{display:flex;align-items:flex-start;gap:11px;border:1px solid #dfe2ed;border-radius:9px;padding:12px;cursor:pointer}.level-options label:has(input:checked){background:#f4f0ff;border-color:#8970e8}.level-options input{accent-color:var(--purple);width:18px;height:18px;flex:none;margin:2px 0 0}.level-options strong{font-size:15px;display:block}.level-options small{display:block;font-size:14px;color:#616a7c;margin-top:2px}.topic-options{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.topic-choice{display:flex;align-items:flex-start;gap:9px;padding:10px 12px;border:1px solid #dfe2ed;border-radius:9px;cursor:pointer;font-size:14px;line-height:1.5}.topic-choice:has(input:checked){border-color:#8970e8;background:#f4f0ff;color:#45307d}.topic-choice input{accent-color:var(--purple);width:17px;height:17px;flex:none;margin:2px 0 0}.briefing-form .primary-button{font-size:15px;width:100%;margin-top:24px;white-space:normal}.briefing-form .status{font-size:14px;margin-bottom:0;line-height:1.6}.briefing-output{min-width:0}.briefing-placeholder{padding:64px 38px;text-align:center;border:1px dashed #cfc6eb;border-radius:17px;background:linear-gradient(155deg,#f0ecff,#fff);min-height:620px;display:flex;flex-direction:column;align-items:center;justify-content:center}.briefing-monogram{display:grid;place-items:center;background:var(--purple);color:white;width:74px;height:74px;border-radius:22px;font-family:Georgia,serif;font-size:42px;font-style:italic;margin-bottom:33px}.briefing-placeholder .eyebrow{font-size:13px}.briefing-placeholder h2{font-family:Georgia,serif;font-size:36px;font-weight:400;letter-spacing:-1px;margin:14px 0}.briefing-placeholder>p{font-size:17px;line-height:1.75;max-width:440px;color:#5e6579;margin:4px 0 24px}.preview-points{display:flex;flex-direction:column;gap:12px;font-size:15px;color:#594489}.preview-points span{border-bottom:1px solid #dfd7f5;padding-bottom:10px}.briefing-placeholder .method-preview{font-size:14px;line-height:1.6;max-width:380px;margin-top:30px}.briefing-result{background:white;border:1px solid var(--line);border-radius:17px;padding:34px;overflow-wrap:anywhere}.briefing-result-header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:25px}.briefing-result-header .eyebrow{font-size:12px}.briefing-result h2{font-family:Georgia,serif;font-size:36px;font-weight:400;line-height:1.2;margin-top:12px;letter-spacing:-1px}.briefing-date{font-size:14px;color:#667084;line-height:1.7}.briefing-badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.briefing-badges span{font-size:14px;border:1px solid #e1dced;background:#f8f6fc;padding:4px 9px;border-radius:6px}.briefing-opening{font-size:17px;line-height:1.85}.coverage-note{font-size:14px;line-height:1.65;color:#646a7d}.briefing-background{background:#f1edff;border-left:3px solid var(--purple);padding:17px 20px;border-radius:0 9px 9px 0;margin:24px 0}.briefing-background strong{font-size:14px;color:#584084}.briefing-background p{font-size:16px;line-height:1.75;margin:8px 0 0}.briefing-story{border-bottom:1px solid var(--line);padding:22px 0}.briefing-story h3{font-size:21px;line-height:1.5;letter-spacing:-.35px;margin:0 0 13px}.briefing-evidence{font-size:17px;line-height:1.85;margin:12px 0}.briefing-citation{color:var(--purple);font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap;display:inline-block;padding:0 4px}.briefing-citation:hover{text-decoration:underline}.briefing-story .relevance-note{font-size:14px;margin-top:6px;margin-bottom:6px}.briefing-story .detail-disclaimer{font-size:14px}.briefing-question{font-size:15px;color:#545c70;line-height:1.7;background:#f7f8fc;border-radius:9px;padding:14px 16px}.briefing-story .story-sources{margin-top:13px}.briefing-references{padding-top:23px}.briefing-references h3{font-size:19px}.briefing-references ol{padding-left:24px}.briefing-references li{font-size:15px;line-height:1.65;padding-left:6px;margin-bottom:17px}.briefing-references a{color:var(--purple);text-underline-offset:3px}.briefing-references .source-meta{display:block;font-size:14px;margin-top:5px}.briefing-method{border-top:1px solid var(--line);padding:18px 0 24px;font-size:14px;line-height:1.75;color:#5e6577}.briefing-method summary{font-weight:650;cursor:pointer;color:var(--ink);min-height:30px}.briefing-result .secondary-button{font-size:15px}.eyebrow{font-size:12px}
+@media(max-width:1000px){.briefing-layout{grid-template-columns:300px minmax(0,1fr);gap:20px}.briefing-form{padding:20px}.briefing-result{padding:25px}.briefing-placeholder{padding:42px 25px}.briefing-result h2{font-size:31px}}
+@media(max-width:760px){.briefing-layout{grid-template-columns:minmax(0,1fr)}.briefing-hero{padding-top:0}.briefing-hero p{font-size:17px}.briefing-form{padding:23px}.briefing-placeholder{min-height:360px;padding:36px 22px}.briefing-monogram{margin-bottom:22px}.briefing-result{padding:23px}.briefing-result h2{font-size:31px}.briefing-story h3{font-size:20px}.workspace-nav{gap:3px}.workspace-nav button{padding:11px 13px;font-size:15px}.briefing-placeholder h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Voice review checkpoint */
+.workspace-nav{flex-wrap:wrap}.ai-next-step{border-top:1px solid var(--line);margin-top:23px;padding-top:22px}.ai-next-step>strong{font-size:16px}.ai-next-step>p{font-size:14px;line-height:1.7;color:#60697b}.ai-next-step .secondary-button{width:100%}.ai-next-step .primary-button{margin-top:12px}.ai-result{margin-top:28px;max-width:850px;margin-left:auto;margin-right:auto}.voice-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}.voice-settings{background:white;border:1px solid var(--line);border-radius:16px;padding:28px}.voice-settings>label:not(.voice-check){display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:650;margin:25px 0 10px}.voice-settings select,.voice-settings input[type=text]{font-size:16px;min-height:46px;width:100%}.voice-settings input[type=text]{border:1px solid #dce0e9;border-radius:8px;padding:11px;color:var(--ink)}.voice-settings input[type=range]{width:100%;accent-color:var(--purple);min-height:32px}.voice-settings output{font-size:14px;font-weight:700;color:var(--purple);background:#f1edff;border-radius:6px;padding:4px 8px;min-width:56px;text-align:center}.voice-settings .field-help,.voice-review-panel .field-help{font-size:14px;line-height:1.65;color:#626b7c}.voice-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:13px}.voice-actions .source-link{font-size:14px}.voice-check{display:flex;align-items:flex-start;gap:12px;margin:23px 0;font-size:16px;line-height:1.65;cursor:pointer}.voice-check input{accent-color:var(--purple);width:19px;height:19px;flex:none;margin-top:4px}.voice-check small{display:block;font-size:14px;color:#626b7c}.voice-review-panel{display:grid;gap:22px}.voice-audition,.voice-checkpoint{background:white;border:1px solid var(--line);border-radius:16px;padding:28px}.voice-audition{background:linear-gradient(150deg,#eeebff,#fff)}.voice-audition h2,.voice-checkpoint h2{font-family:Georgia,serif;font-size:31px;font-weight:400;margin:13px 0 18px;line-height:1.2}.voice-audition>p:first-of-type{font-family:Georgia,serif;font-size:21px;line-height:1.9;color:#3f3c5d;margin:20px 0 26px}.voice-review-panel .eyebrow{font-size:12px}.voice-checkpoint>p{font-size:16px;color:#596277;line-height:1.75}.voice-checkpoint #voice-status,.voice-checkpoint #voice-request-status{font-size:14px;min-height:20px;color:#543b88}.voice-checkpoint #voice-request-status:empty{display:none}.voice-setup{border:1px solid var(--line);background:#fff;border-radius:12px;padding:20px;font-size:15px;line-height:1.75;color:#5b6275}.voice-setup summary{cursor:pointer;color:var(--ink);font-weight:650;min-height:28px}.voice-setup ol{padding-left:23px}.voice-setup li{margin:12px 0}.voice-setup strong{font-weight:650;color:var(--ink)}.voice-layout button:disabled,.ai-result button:disabled{opacity:.55;cursor:default}audio{display:block;width:100%;margin:18px 0;max-width:100%}#ai-audio-output .source-link{font-size:15px}.ai-result .detail-disclaimer{font-size:14px}.ai-result li{font-size:16px;line-height:1.7;margin:10px 0}.ai-result li a{color:var(--purple)}.ai-result h2{margin-bottom:18px}.ai-result .primary-button{white-space:normal}
+@media(max-width:850px){.voice-layout{grid-template-columns:minmax(0,1fr)}.voice-settings,.voice-audition,.voice-checkpoint{padding:23px}.voice-audition h2,.voice-checkpoint h2{font-size:29px}.workspace-nav button{padding:10px 12px;font-size:14px}}
+.connection-refresh{margin:0 0 23px}
+</style>
+</head>
+<body>
+  <a class="skip" href="#welcome-title">Skip to content</a>
+  <header class="topbar"><a class="brand" href="./index.html" aria-label="Sourcera, home"><span class="brand-mark">s</span>sourcera<span class="brand-period">.</span></a><span class="project-tag">THE LIQUID BRIEFING</span><span class="local-label" id="dataset-mode"><span></span> Local workspace</span></header>
+  <main>
+    <p id="demo-notice" class="story-notice" hidden>DEMO DATA · These articles are entirely fictional. Source links point to example.com. Use the licensed event dataset for the hackathon submission.</p>
+    <section id="onboarding" class="onboarding" aria-labelledby="welcome-title">
+      <div class="eyebrow">MAKE THE NEWS YOURS</div>
+      <h1 id="welcome-title" tabindex="-1">One day of news.<br><span>Six ways to see it.</span></h1>
+      <p class="welcome-copy">What would you like to understand? Choose the perspective that fits you best.</p>
+      <p class="example-note">Six example listener profiles created for this prototype.</p>
+      <fieldset class="profile-fieldset"><legend>Choose your listener profile</legend><div id="profile-options" class="profile-grid"></div></fieldset>
+      <div class="onboarding-actions"><div><strong id="selection-status" role="status" aria-live="polite">Choose one profile to get started</strong><p>You’ll see stories matching your interests. You can change your profile anytime.</p></div><button id="start-exploring" class="primary-button" disabled type="button">Build my briefing</button></div>
+      <p id="profile-error" class="status" role="alert"></p>
+    </section>
+    <div id="explorer" hidden>
+    <section class="listener-banner" aria-label="Your listener profile"><div><span class="eyebrow">YOUR PERSPECTIVE</span><strong id="current-profile"></strong><p id="current-interests"></p></div><button id="change-profile" class="secondary-button" type="button">Change profile</button></section>
+    <nav class="workspace-nav" aria-label="Workspace"><button id="briefing-view" class="active" type="button" aria-pressed="true">Build my briefing</button><button id="voice-view" type="button" aria-pressed="false">Voice studio</button><button id="explore-view" type="button" aria-pressed="false">Explore sources</button></nav>
+    <section id="briefing-builder" aria-labelledby="briefing-title">
+      <div class="briefing-hero"><div class="eyebrow">MYMORNING · MADE FOR YOUR PERSPECTIVE</div><h1 id="briefing-title" tabindex="-1">Build my briefing<span>.</span></h1><p>Your interests. Your level. Your time.<br>A written briefing you can trace back to its sources.</p><span class="briefing-pill">Written briefing · First edition</span></div>
+      <div class="briefing-layout">
+        <form id="briefing-form" class="briefing-form" aria-labelledby="preferences-title">
+          <h2 id="preferences-title">Make it yours</h2>
+          <label for="briefing-date">Publication date</label><select id="briefing-date" disabled><option>Loading dates…</option></select><p class="field-help">Historical dataset · Dates in UTC</p>
+          <fieldset><legend>How much background do you need?</legend><div class="level-options">
+            <label><input type="radio" name="knowledge" value="beginner" checked><span><strong>Beginner</strong><small>Explain the basics</small></span></label>
+            <label><input type="radio" name="knowledge" value="informed"><span><strong>Informed</strong><small>Give me the key details</small></span></label>
+            <label><input type="radio" name="knowledge" value="advanced"><span><strong>Advanced</strong><small>More evidence and review questions</small></span></label>
+          </div></fieldset>
+          <fieldset><legend>What should we focus on?</legend><p class="field-help">Topics within your listener profile. Choose at least one.</p><div id="briefing-topics" class="topic-options"></div></fieldset>
+          <label for="briefing-duration">Your time budget</label><select id="briefing-duration"><option value="2">Up to 2 minutes · Quick catch-up</option><option value="4" selected>Up to 4 minutes · Daily overview</option><option value="6">Up to 6 minutes · More coverage</option></select><p class="field-help">Estimated at 150 words per minute. Shorter when coverage is limited.</p>
+          <label for="briefing-language">Briefing language</label><select id="briefing-language" disabled><option value="en">English</option></select><p class="field-help">English in this version. Related sources keep their original language.</p>
+          <button id="generate-briefing" class="primary-button" type="submit" disabled>Create my written briefing</button>
+          <p id="briefing-status" class="status" role="status" aria-live="polite">Loading your briefing options…</p>
+          <div class="ai-next-step"><strong>Ready for AI and audio?</strong><p>Review your voice first. Then connect your keys locally and enable generation when you are ready.</p><button id="review-voice" type="button" class="secondary-button">Review my voice</button><button id="write-ai" class="primary-button" type="button" disabled>Write briefing with AI</button><p id="ai-availability" class="field-help" role="status">Full generation is paused for voice review.</p></div>
+        </form>
+        <div class="briefing-output">
+          <div id="briefing-placeholder" class="briefing-placeholder"><span class="briefing-monogram" aria-hidden="true">m.</span><div class="eyebrow">A LITTLE LESS NOISE</div><h2>Your morning starts here.</h2><p>Choose your preferences, then create a briefing with relevant headlines, attributed details and links to the reporting.</p><div class="preview-points"><span>Selected for your profile</span><span>Background suited to your level</span><span>Sources beside the claims</span></div><p class="method-preview">This first version assembles a source-based draft locally. Audio and AI rewriting come later.</p></div>
+          <article id="briefing-result" class="briefing-result" aria-labelledby="briefing-result-title" aria-busy="false" hidden></article>
+        </div>
+      </div>
+      <article id="ai-result" class="briefing-result ai-result" aria-labelledby="ai-result-title" hidden></article>
+    </section>
+    <section id="voice-studio" aria-labelledby="voice-title" hidden>
+      <div class="briefing-hero"><div class="eyebrow">LISTEN FIRST · MAKE IT YOURS</div><h1 id="voice-title" tabindex="-1">Find your morning voice<span>.</span></h1><p>Choose a voice, shape the delivery and try a short sample.<br>Your full briefing stays paused while you review.</p><span class="briefing-pill">Voice review · No automatic generation</span></div>
+      <div id="voice-connection" class="story-notice" role="status">Checking local integration setup…</div>
+      <button id="refresh-voice-connection" class="secondary-button connection-refresh" type="button">Refresh connection after key setup</button>
+      <div class="voice-layout">
+        <form id="voice-form" class="voice-settings" aria-labelledby="voice-settings-title">
+          <h2 id="voice-settings-title">Your narrator</h2>
+          <label for="voice-list">Choose from your ElevenLabs voices</label><select id="voice-list"><option value="">Load your voices, or enter a Voice ID below</option></select>
+          <div class="voice-actions"><button id="load-voices" class="secondary-button" type="button" disabled>Load my voices</button><a class="source-link" href="https://elevenlabs.io/app/voice-library" target="_blank" rel="noopener noreferrer">Open Voice Library</a></div>
+          <label for="voice-id">ElevenLabs Voice ID</label><input id="voice-id" type="text" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Paste a Voice ID, not an API key" aria-describedby="voice-identity-help"><p id="voice-identity-help" class="field-help">Accent, timbre and voice identity come from the voice you choose. Add it to your ElevenLabs account if needed.</p>
+          <label for="voice-tone">Delivery starting point</label><select id="voice-tone"><option value="neutral">Clear &amp; neutral</option><option value="warm">Warm &amp; conversational</option><option value="energetic">Bright &amp; energetic</option></select><p class="field-help">Presets set the sliders below. Actual expression depends on the voice and text; a preset does not guarantee an emotion.</p>
+          <label for="voice-speed">Speed <output id="voice-speed-value" for="voice-speed">1.00×</output></label><input id="voice-speed" type="range" min="0.7" max="1.2" step="0.01" value="1"><p class="field-help">Slower at 0.70× · Original pace at 1.00× · Faster at 1.20×</p>
+          <label for="voice-stability">Stability <output id="voice-stability-value" for="voice-stability">65%</output></label><input id="voice-stability" type="range" min="0" max="1" step="0.01" value="0.65"><p class="field-help">Lower gives more variation. Higher gives a more consistent delivery.</p>
+          <label for="voice-similarity">Voice similarity <output id="voice-similarity-value" for="voice-similarity">75%</output></label><input id="voice-similarity" type="range" min="0" max="1" step="0.01" value="0.75"><p class="field-help">How closely to follow the identity of the selected voice.</p>
+          <label for="voice-style">Style emphasis <output id="voice-style-value" for="voice-style">5%</output></label><input id="voice-style" type="range" min="0" max="1" step="0.01" value="0.05"><p class="field-help">Emphasises the selected voice’s existing style. Higher is not always more natural.</p>
+          <label class="voice-check"><input id="voice-boost" type="checkbox" checked><span>Speaker boost<small>Reinforce similarity to the original speaker.</small></span></label>
+          <p class="field-help">Model: Eleven Multilingual v2 · English narration. These controls apply to this model; other models may support different settings.</p>
+        </form>
+        <div class="voice-review-panel">
+          <div class="voice-audition"><div class="eyebrow">A SHORT AUDITION</div><h2>Hear it before you commit.</h2><p id="voice-sample-text">Good morning. This is MyMorning, your personal news briefing. We bring you the stories that matter to you, with clear explanations and sources you can check. Take a moment, and start your day informed.</p><button id="preview-voice" class="primary-button" type="button" disabled>Listen to sample</button><p class="field-help">Each new sample uses ElevenLabs credits. Nothing plays or generates automatically. Only this sample text is sent for the audition.</p><audio id="voice-sample-player" controls preload="none" aria-label="ElevenLabs voice audition" hidden></audio></div>
+          <div class="voice-checkpoint"><div class="eyebrow">YOUR REVIEW POINT</div><h2>Keep this voice?</h2><p>Listen and adjust until the delivery feels right. Saving keeps your preferences in this browser; it does not enable full generation.</p><label class="voice-check"><input id="voice-reviewed" type="checkbox"><span>I have reviewed this voice selection and its settings.</span></label><button id="save-voice" type="button" class="secondary-button" disabled>Save voice preferences</button><p id="voice-status" role="status" aria-live="polite">Choose a voice to start reviewing.</p><p id="voice-request-status" role="status" aria-live="polite"></p></div>
+          <details class="voice-setup"><summary>How to connect your keys privately</summary><ol><li>Create an OpenAI API key and an ElevenLabs API key in their official dashboards.</li><li>On your computer, open <strong>Set up AI.command</strong> in the project folder. Paste the keys into its private prompts.</li><li>Open <strong>Review Voice.command</strong>. The fictional demo opens at <strong>http://127.0.0.1:8766/</strong>.</li><li>Return here, load your voices and preview a short sample. Full generation remains paused.</li></ol><p>Never enter an API key in the Voice ID field or put one in the shared website. The public preview cannot use keys stored on your computer.</p></details>
+        </div>
+      </div>
+    </section>
+    <div id="source-explorer" hidden>
+    <section class="intro"><div class="eyebrow">YOUR STARTING POINT</div><h1>A day of news.<br><span>Your own perspective.</span></h1><p>Explore the sources, find the stories and discover what matters.</p><div class="intro-note"><span class="note-icon">✦</span> The first step toward your personal briefing.</div><div class="hero-decoration" aria-hidden="true"><div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div><div class="wave w4"></div><div class="wave w5"></div><div class="wave w6"></div><div class="wave w7"></div><div class="wave w8"></div><div class="wave w9"></div></div></section>
+    <div class="workspace">
+      <aside class="filters" aria-labelledby="filter-heading"><div class="filter-title"><h2 id="filter-heading">Your selection</h2><button id="reset" class="text-button" type="button">Reset filters</button></div>
+        <label for="date">Publication date</label><select id="date" disabled><option>Loading dates…</option></select><p class="field-help">Dataset dates are shown in UTC</p>
+        <label for="language">Article language</label><select id="language" disabled><option value="">All languages</option></select>
+        <label for="outlet">Publisher</label><select id="outlet" disabled><option value="">All publishers</option></select>
+        <div class="dataset-note"><span class="tiny-label">THE COLLECTION</span><strong id="dataset-total">— articles</strong><p>6 sources · 3 languages</p><p>Includes historical articles. Choose a date to explore its coverage.</p></div>
+        <div class="license-note">Newstex data for the hackathon. Read each article at its original source.</div>
+      </aside>
+      <section class="news-area" aria-labelledby="news-heading">
+        <div class="stats"><div><span id="count-label">Articles in your selection</span><strong id="count">—</strong></div><div><span>Publishers represented</span><strong id="outlet-count">—</strong></div><div><span>Languages represented</span><strong id="language-count">—</strong></div></div>
+        <div class="news-toolbar"><div><div class="eyebrow" id="date-label">EXPLORE THE COLLECTION</div><h2 id="news-heading">The day’s news</h2></div><span class="sort-label" id="sort-label">Newest first</span></div>
+        <div class="view-controls"><div class="view-tabs" role="group" aria-label="News view"><button id="articles-view" class="active" type="button" aria-pressed="true">Articles</button><button id="stories-view" type="button" aria-pressed="false">Group into stories</button></div><span id="grouping-label">Explore individual source articles</span></div><div id="story-notice" class="story-notice" hidden>Suggested story groups, ready for editorial review. Filters find matching stories; each group keeps all of its sources. Reported details are short source quotations, not independently verified facts.</div><div class="search-wrap"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" disabled><span id="day-context"></span></div>
+        <p id="status" class="status" role="status" aria-live="polite">Loading the collection…</p>
+        <div id="results" class="results" aria-busy="true" tabindex="-1"></div>
+        <nav id="pagination" class="pagination" aria-label="News pages" hidden><button id="previous" type="button">Previous</button><span id="page-label"></span><button id="next" type="button">Next</button></nav>
+      </section>
+    </div>
+    </div>
+    </div>
+    <footer><span>Sourcera <b> / </b> The Liquid Briefing</span><span>MyMorning · Written briefing prototype</span></footer>
+  </main>
+<script>const DEMO = {"options":{"total":10,"demo":true,"dates":[{"date":"2026-11-18","count":9},{"date":"2026-11-17","count":1}],"languages":["de","en","nl"],"outlets":["Demo Business","Demo Daily","Demo Markets","Demo World","Invezz","Invezz - Dutch","Invezz - German"],"defaultDate":"2026-11-18"},"profiles":[{"id":"everyday","name":"The Everyday Listener","symbol":"☀","description":"The big picture, without the jargon. Understand what today’s news means for everyday life.","topics":["Cost of living","Jobs","Public services"],"depth":"Plain language","minutes":3},{"id":"markets","name":"The Markets Professional","symbol":"↗","description":"Follow central banks, currencies and the economic releases moving global markets.","topics":["Central banks","Currencies","Economic data"],"depth":"Detailed analysis","minutes":7},{"id":"tech","name":"The Tech & AI Enthusiast","symbol":"✦","description":"Keep up with AI, chips, new products and the companies shaping technology.","topics":["Artificial intelligence","Technology","Cybersecurity"],"depth":"Explained with context","minutes":5},{"id":"business","name":"The Business Owner","symbol":"▤","description":"Understand the changes that matter to running a business: costs, customers and growth.","topics":["Operating costs","Retail","Business growth"],"depth":"Practical context","minutes":5},{"id":"global","name":"The Global Affairs Follower","symbol":"◎","description":"Connect the dots between international politics, diplomacy and major world events.","topics":["World affairs","Politics","International trade"],"depth":"Background and context","minutes":6},{"id":"crypto","name":"The Crypto & Digital Finance Follower","symbol":"◇","description":"Follow digital assets, crypto platforms and regulation, with reporting rather than trading advice.","topics":["Digital assets","Platforms","Regulation"],"depth":"Focused analysis","minutes":5}],"days":{"2026-11-18":{"total":9,"articles":{"everyday":[{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1","relevance":{"score":3,"reason":"Cost of living"}},{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2","relevance":{"score":1,"reason":"Cost of living"}}],"markets":[{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2","relevance":{"score":2,"reason":"Currencies and economic data"}}],"tech":[{"id":"demo-5","headline":"Nova AI startet neuen Chip fur Software Developers","date":"2026-11-18T11:03:00+00:00","day":"2026-11-18","language":"de","outlet":"Invezz - German","url":"https://example.com/#demo-5","relevance":{"score":3,"reason":"AI and computing"}},{"id":"demo-4","headline":"Nova AI lanceert nieuwe chip voor software developers","date":"2026-11-18T11:02:00+00:00","day":"2026-11-18","language":"nl","outlet":"Invezz - Dutch","url":"https://example.com/#demo-4","relevance":{"score":3,"reason":"AI and computing"}},{"id":"demo-3","headline":"Nova AI launches new chip for software developers","date":"2026-11-18T11:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-3","relevance":{"score":3,"reason":"AI and computing"}},{"id":"demo-9","headline":"Nova AI opens cybersecurity training programme","date":"2026-11-18T15:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-9","relevance":{"score":1,"reason":"AI and computing"}}],"business":[{"id":"demo-6","headline":"Retail business reports stronger sales and lower supply chain costs","date":"2026-11-18T12:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Business","url":"https://example.com/#demo-6","relevance":{"score":5,"reason":"Customers and business growth"}},{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1","relevance":{"score":2,"reason":"Business costs and operations"}},{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7","relevance":{"score":1,"reason":"Business costs and operations"}}],"global":[{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7","relevance":{"score":4,"reason":"Politics and diplomacy"}}],"crypto":[{"id":"demo-8","headline":"Bitcoin and crypto platforms announce digital asset regulation pilot","date":"2026-11-18T14:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-8","relevance":{"score":3,"reason":"Crypto and digital assets"}}]},"stories":{"everyday":[{"id":"6b01c344dbe5827b","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1"}],"details":[{"quote":"Grocery prices increased by 2% in the sample economy.","sourceId":"demo-1","url":"https://example.com/#demo-1","outlet":"Demo Daily"}],"reviewRequired":true,"relevance":{"score":3,"reason":"Cost of living"}},{"id":"c4b8874158675113","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2"}],"details":[{"quote":"The sample central bank held its interest rate at 3%.","sourceId":"demo-2","url":"https://example.com/#demo-2","outlet":"Demo Markets"}],"reviewRequired":true,"relevance":{"score":1,"reason":"Cost of living"}}],"markets":[{"id":"c4b8874158675113","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2"}],"details":[{"quote":"The sample central bank held its interest rate at 3%.","sourceId":"demo-2","url":"https://example.com/#demo-2","outlet":"Demo Markets"}],"reviewRequired":true,"relevance":{"score":2,"reason":"Currencies and economic data"}}],"tech":[{"id":"42f57f61d535fe92","headline":"Nova AI launches new chip for software developers","date":"2026-11-18T11:03:00+00:00","articleCount":3,"publisherCount":1,"languages":["de","en","nl"],"sources":[{"id":"demo-5","headline":"Nova AI startet neuen Chip fur Software Developers","date":"2026-11-18T11:03:00+00:00","day":"2026-11-18","language":"de","outlet":"Invezz - German","url":"https://example.com/#demo-5"},{"id":"demo-4","headline":"Nova AI lanceert nieuwe chip voor software developers","date":"2026-11-18T11:02:00+00:00","day":"2026-11-18","language":"nl","outlet":"Invezz - Dutch","url":"https://example.com/#demo-4"},{"id":"demo-3","headline":"Nova AI launches new chip for software developers","date":"2026-11-18T11:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-3"}],"details":[{"quote":"Nova AI announced 12 developer tools for its sample chip.","sourceId":"demo-3","url":"https://example.com/#demo-3","outlet":"Invezz"}],"reviewRequired":true,"relevance":{"score":3,"reason":"AI and computing"}},{"id":"6ded1a3096bf8995","headline":"Nova AI opens cybersecurity training programme","date":"2026-11-18T15:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-9","headline":"Nova AI opens cybersecurity training programme","date":"2026-11-18T15:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-9"}],"details":[{"quote":"The sample training programme offers 20 places for developers.","sourceId":"demo-9","url":"https://example.com/#demo-9","outlet":"Invezz"}],"reviewRequired":true,"relevance":{"score":1,"reason":"AI and computing"}}],"business":[{"id":"a386c9fec4060707","headline":"Retail business reports stronger sales and lower supply chain costs","date":"2026-11-18T12:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-6","headline":"Retail business reports stronger sales and lower supply chain costs","date":"2026-11-18T12:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Business","url":"https://example.com/#demo-6"}],"details":[{"quote":"The sample retailer reported a 4% rise in sales.","sourceId":"demo-6","url":"https://example.com/#demo-6","outlet":"Demo Business"}],"reviewRequired":true,"relevance":{"score":5,"reason":"Customers and business growth"}},{"id":"6b01c344dbe5827b","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1"}],"details":[{"quote":"Grocery prices increased by 2% in the sample economy.","sourceId":"demo-1","url":"https://example.com/#demo-1","outlet":"Demo Daily"}],"reviewRequired":true,"relevance":{"score":2,"reason":"Business costs and operations"}},{"id":"bc560a5eacc6a061","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7"}],"details":[{"quote":"Leaders from 8 fictional countries joined the sample summit.","sourceId":"demo-7","url":"https://example.com/#demo-7","outlet":"Demo World"}],"reviewRequired":true,"relevance":{"score":1,"reason":"Business costs and operations"}}],"global":[{"id":"bc560a5eacc6a061","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7"}],"details":[{"quote":"Leaders from 8 fictional countries joined the sample summit.","sourceId":"demo-7","url":"https://example.com/#demo-7","outlet":"Demo World"}],"reviewRequired":true,"relevance":{"score":4,"reason":"Politics and diplomacy"}}],"crypto":[{"id":"884fe18c7d0a37a5","headline":"Bitcoin and crypto platforms announce digital asset regulation pilot","date":"2026-11-18T14:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-8","headline":"Bitcoin and crypto platforms announce digital asset regulation pilot","date":"2026-11-18T14:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-8"}],"details":[{"quote":"The sample digital asset pilot includes 6 fictional platforms.","sourceId":"demo-8","url":"https://example.com/#demo-8","outlet":"Demo Markets"}],"reviewRequired":true,"relevance":{"score":3,"reason":"Crypto and digital assets"}}]},"briefings":{"everyday":{"date":"2026-11-18","profile":"everyday","profileName":"The Everyday Listener","topics":["Cost of living","Jobs and everyday life"],"stories":[{"id":"6b01c344dbe5827b","headline":"Local grocery prices rise as energy costs ease","topics":["Cost of living"],"reason":"Cost of living","sources":[{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1"}],"leadSourceId":"demo-1","details":[{"quote":"Grocery prices increased by 2% in the sample economy.","sourceId":"demo-1","url":"https://example.com/#demo-1","outlet":"Demo Daily"}]},{"id":"c4b8874158675113","headline":"Central bank holds interest rates as inflation slows","topics":["Cost of living"],"reason":"Cost of living","sources":[{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2"}],"leadSourceId":"demo-2","details":[{"quote":"The sample central bank held its interest rate at 3%.","sourceId":"demo-2","url":"https://example.com/#demo-2","outlet":"Demo Markets"}]}],"demo":true,"language":"en"},"markets":{"date":"2026-11-18","profile":"markets","profileName":"The Markets Professional","topics":["Central banks and monetary policy","Currencies and economic data"],"stories":[{"id":"c4b8874158675113","headline":"Central bank holds interest rates as inflation slows","topics":["Central banks and monetary policy","Currencies and economic data"],"reason":"Currencies and economic data","sources":[{"id":"demo-2","headline":"Central bank holds interest rates as inflation slows","date":"2026-11-18T10:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-2"}],"leadSourceId":"demo-2","details":[{"quote":"The sample central bank held its interest rate at 3%.","sourceId":"demo-2","url":"https://example.com/#demo-2","outlet":"Demo Markets"}]}],"demo":true,"language":"en"},"tech":{"date":"2026-11-18","profile":"tech","profileName":"The Tech & AI Enthusiast","topics":["AI and computing","Technology and cybersecurity"],"stories":[{"id":"42f57f61d535fe92","headline":"Nova AI launches new chip for software developers","topics":["AI and computing","Technology and cybersecurity"],"reason":"AI and computing","sources":[{"id":"demo-5","headline":"Nova AI startet neuen Chip fur Software Developers","date":"2026-11-18T11:03:00+00:00","day":"2026-11-18","language":"de","outlet":"Invezz - German","url":"https://example.com/#demo-5"},{"id":"demo-4","headline":"Nova AI lanceert nieuwe chip voor software developers","date":"2026-11-18T11:02:00+00:00","day":"2026-11-18","language":"nl","outlet":"Invezz - Dutch","url":"https://example.com/#demo-4"},{"id":"demo-3","headline":"Nova AI launches new chip for software developers","date":"2026-11-18T11:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-3"}],"leadSourceId":"demo-3","details":[{"quote":"Nova AI announced 12 developer tools for its sample chip.","sourceId":"demo-3","url":"https://example.com/#demo-3","outlet":"Invezz"}]},{"id":"6ded1a3096bf8995","headline":"Nova AI opens cybersecurity training programme","topics":["AI and computing"],"reason":"AI and computing","sources":[{"id":"demo-9","headline":"Nova AI opens cybersecurity training programme","date":"2026-11-18T15:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Invezz","url":"https://example.com/#demo-9"}],"leadSourceId":"demo-9","details":[{"quote":"The sample training programme offers 20 places for developers.","sourceId":"demo-9","url":"https://example.com/#demo-9","outlet":"Invezz"}]}],"demo":true,"language":"en"},"business":{"date":"2026-11-18","profile":"business","profileName":"The Business Owner","topics":["Business costs and operations","Customers and business growth"],"stories":[{"id":"a386c9fec4060707","headline":"Retail business reports stronger sales and lower supply chain costs","topics":["Business costs and operations","Customers and business growth"],"reason":"Customers and business growth","sources":[{"id":"demo-6","headline":"Retail business reports stronger sales and lower supply chain costs","date":"2026-11-18T12:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Business","url":"https://example.com/#demo-6"}],"leadSourceId":"demo-6","details":[{"quote":"The sample retailer reported a 4% rise in sales.","sourceId":"demo-6","url":"https://example.com/#demo-6","outlet":"Demo Business"}]},{"id":"6b01c344dbe5827b","headline":"Local grocery prices rise as energy costs ease","topics":["Business costs and operations"],"reason":"Business costs and operations","sources":[{"id":"demo-1","headline":"Local grocery prices rise as energy costs ease","date":"2026-11-18T09:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-1"}],"leadSourceId":"demo-1","details":[{"quote":"Grocery prices increased by 2% in the sample economy.","sourceId":"demo-1","url":"https://example.com/#demo-1","outlet":"Demo Daily"}]},{"id":"bc560a5eacc6a061","headline":"International summit brings government leaders together for trade talks","topics":["Business costs and operations"],"reason":"Business costs and operations","sources":[{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7"}],"leadSourceId":"demo-7","details":[{"quote":"Leaders from 8 fictional countries joined the sample summit.","sourceId":"demo-7","url":"https://example.com/#demo-7","outlet":"Demo World"}]}],"demo":true,"language":"en"},"global":{"date":"2026-11-18","profile":"global","profileName":"The Global Affairs Follower","topics":["Politics and diplomacy","International affairs"],"stories":[{"id":"bc560a5eacc6a061","headline":"International summit brings government leaders together for trade talks","topics":["Politics and diplomacy","International affairs"],"reason":"Politics and diplomacy","sources":[{"id":"demo-7","headline":"International summit brings government leaders together for trade talks","date":"2026-11-18T13:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo World","url":"https://example.com/#demo-7"}],"leadSourceId":"demo-7","details":[{"quote":"Leaders from 8 fictional countries joined the sample summit.","sourceId":"demo-7","url":"https://example.com/#demo-7","outlet":"Demo World"}]}],"demo":true,"language":"en"},"crypto":{"date":"2026-11-18","profile":"crypto","profileName":"The Crypto & Digital Finance Follower","topics":["Crypto and digital assets","Digital-finance platforms"],"stories":[{"id":"884fe18c7d0a37a5","headline":"Bitcoin and crypto platforms announce digital asset regulation pilot","topics":["Crypto and digital assets","Digital-finance platforms"],"reason":"Crypto and digital assets","sources":[{"id":"demo-8","headline":"Bitcoin and crypto platforms announce digital asset regulation pilot","date":"2026-11-18T14:00:00+00:00","day":"2026-11-18","language":"en","outlet":"Demo Markets","url":"https://example.com/#demo-8"}],"leadSourceId":"demo-8","details":[{"quote":"The sample digital asset pilot includes 6 fictional platforms.","sourceId":"demo-8","url":"https://example.com/#demo-8","outlet":"Demo Markets"}]}],"demo":true,"language":"en"}}},"2026-11-17":{"total":1,"articles":{"everyday":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10","relevance":{"score":1,"reason":"Jobs and everyday life"}}],"markets":[],"tech":[],"business":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10","relevance":{"score":2,"reason":"Customers and business growth"}}],"global":[],"crypto":[]},"stories":{"everyday":[{"id":"91f25fe8324d47c9","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10"}],"details":[{"quote":"The sample programme offers 10 places for business owners.","sourceId":"demo-10","url":"https://example.com/#demo-10","outlet":"Demo Daily"}],"reviewRequired":true,"relevance":{"score":1,"reason":"Jobs and everyday life"}}],"markets":[],"tech":[],"business":[{"id":"91f25fe8324d47c9","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","articleCount":1,"publisherCount":1,"languages":["en"],"sources":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10"}],"details":[{"quote":"The sample programme offers 10 places for business owners.","sourceId":"demo-10","url":"https://example.com/#demo-10","outlet":"Demo Daily"}],"reviewRequired":true,"relevance":{"score":2,"reason":"Customers and business growth"}}],"global":[],"crypto":[]},"briefings":{"everyday":{"date":"2026-11-17","profile":"everyday","profileName":"The Everyday Listener","topics":["Cost of living","Jobs and everyday life"],"stories":[{"id":"91f25fe8324d47c9","headline":"Small business jobs programme opens applications","topics":["Jobs and everyday life"],"reason":"Jobs and everyday life","sources":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10"}],"leadSourceId":"demo-10","details":[{"quote":"The sample programme offers 10 places for business owners.","sourceId":"demo-10","url":"https://example.com/#demo-10","outlet":"Demo Daily"}]}],"demo":true,"language":"en"},"markets":{"date":"2026-11-17","profile":"markets","profileName":"The Markets Professional","topics":["Central banks and monetary policy","Currencies and economic data"],"stories":[],"demo":true,"language":"en"},"tech":{"date":"2026-11-17","profile":"tech","profileName":"The Tech & AI Enthusiast","topics":["AI and computing","Technology and cybersecurity"],"stories":[],"demo":true,"language":"en"},"business":{"date":"2026-11-17","profile":"business","profileName":"The Business Owner","topics":["Business costs and operations","Customers and business growth"],"stories":[{"id":"91f25fe8324d47c9","headline":"Small business jobs programme opens applications","topics":["Customers and business growth"],"reason":"Customers and business growth","sources":[{"id":"demo-10","headline":"Small business jobs programme opens applications","date":"2026-11-17T09:00:00+00:00","day":"2026-11-17","language":"en","outlet":"Demo Daily","url":"https://example.com/#demo-10"}],"leadSourceId":"demo-10","details":[{"quote":"The sample programme offers 10 places for business owners.","sourceId":"demo-10","url":"https://example.com/#demo-10","outlet":"Demo Daily"}]}],"demo":true,"language":"en"},"global":{"date":"2026-11-17","profile":"global","profileName":"The Global Affairs Follower","topics":["Politics and diplomacy","International affairs"],"stories":[],"demo":true,"language":"en"},"crypto":{"date":"2026-11-17","profile":"crypto","profileName":"The Crypto & Digital Finance Follower","topics":["Crypto and digital assets","Digital-finance platforms"],"stories":[],"demo":true,"language":"en"}}}}};
+
+async function demoFetch(path) {
+ const url = new URL(path, 'https://demo.local');
+ if(url.pathname==='/api/ai/status') return {ok:true,json:async()=>({openaiConfigured:false,elevenLabsConfigured:false,generationEnabled:false,sourceProcessingAllowed:false,reviewOnly:true,staticPreview:true,voiceModel:'eleven_multilingual_v2'})};
+ if(url.pathname.startsWith('/api/ai/')) return {ok:false,json:async()=>({error:'Connect your keys in the local app. This public preview supports voice settings review only.'})};
+ if(url.pathname==='/api/options') return {ok:true,json:async()=>DEMO.options};
+ if(url.pathname==='/api/profiles') return {ok:true,json:async()=>({profiles:DEMO.profiles})};
+ const p=url.searchParams, day=DEMO.days[p.get('date')], profile=p.get('profile');
+ if(!day) return {ok:false};
+ if(url.pathname==='/api/briefing-material') return {ok:!!day.briefings[profile],json:async()=>day.briefings[profile]};
+ const view=url.pathname.endsWith('stories')?'stories':'articles';
+ const language=p.get('language'),outlet=p.get('outlet'),query=(p.get('q')||'').toLocaleLowerCase();
+ const matches=a=>(!language||a.language===language)&&(!outlet||a.outlet===outlet)&&(!query||a.headline.toLocaleLowerCase().includes(query));
+ const items=(day[view][profile]||[]).filter(item=>view==='stories'?item.sources.some(matches):matches(item));
+ const sourceItems=view==='stories'?items.flatMap(s=>s.sources.filter(matches)):items;
+ const size=view==='stories'?10:20,pages=Math.max(1,Math.ceil(items.length/size)),page=Math.min(pages,Math.max(1,Number(p.get('page'))||1));
+ return {ok:true,json:async()=>({items:items.slice((page-1)*size,page*size),total:items.length,dayTotal:day.total,articleTotal:sourceItems.length,outletCount:new Set(sourceItems.map(a=>a.outlet)).size,languageCount:new Set(sourceItems.map(a=>a.language)).size,page,pages,pageSize:size})};
+}
+
+/* Pure composition shared by the local workspace and fictional public demo. */
+(function (root) {
+  'use strict';
+  const lenses = {
+    everyday: { term: 'Cost of living', definition: 'The cost of living is the amount people spend on everyday essentials, such as food, housing and energy.', question: 'What does the original reporting say about household costs or access to everyday services?' },
+    markets: { term: 'Interest rates', definition: 'An interest rate is the cost of borrowing money, usually expressed as a percentage over a period of time.', question: 'Which figures, policy decisions and comparison periods are actually supported by the reporting?' },
+    tech: { term: 'Artificial intelligence', definition: 'Artificial intelligence describes computer systems designed to perform tasks such as recognising patterns or generating text.', question: 'What evidence distinguishes an announced capability from a product that people can already use?' },
+    business: { term: 'Operating costs', definition: 'Operating costs are the expenses of running a business, such as energy, wages and transport.', question: 'Does the reporting provide enough detail to assess costs, customers or operations for your own business?' },
+    global: { term: 'International trade', definition: 'International trade is the exchange of goods and services between countries.', question: 'Which parties are involved, and does the reporting describe a proposal, a discussion or an agreed decision?' },
+    crypto: { term: 'Digital assets', definition: 'Digital assets are items of value recorded digitally. Some use a blockchain, a shared record maintained across a network.', question: 'What does the reporting establish about the proposal, the organisations involved and its regulatory status?' },
+  };
+  function compose(material, settings) {
+    if (!['beginner', 'informed', 'advanced'].includes(settings.level)) throw new Error('Choose a knowledge level.');
+    if (![2, 4, 6].includes(Number(settings.minutes))) throw new Error('Choose a briefing length.');
+    if (!settings.topics.length || settings.topics.some(t => !material.topics.includes(t))) throw new Error('Choose at least one available topic.');
+    const eligible = material.stories.filter(s => s.topics.some(t => settings.topics.includes(t)));
+    const lens = lenses[material.profile];
+    const limit = { 2: 3, 4: 5, 6: 8 }[settings.minutes];
+    const sources = [], sourceNumbers = new Map(), sections = [];
+    function cite(source) {
+      if (!sourceNumbers.has(source.id)) {
+        sourceNumbers.set(source.id, sources.length + 1);
+        sources.push({ ...source, number: sources.length + 1 });
+      }
+      return sourceNumbers.get(source.id);
+    }
+    const levels = { beginner: 'Beginner', informed: 'Informed', advanced: 'Advanced' };
+    const background = settings.level === 'beginner' && eligible.length ? { title: lens.term, text: lens.definition } : null;
+    for (const story of eligible.slice(0, limit)) {
+      const lead = story.sources.find(s => s.id === story.leadSourceId);
+      if (!lead) continue;
+      const titleCitation = cite(lead);
+      const evidence = story.details.slice(0, settings.level === 'advanced' ? 2 : 1).map(detail => {
+        const source = story.sources.find(s => s.id === detail.sourceId);
+        return { text: `${source.outlet} reports: “${detail.quote}”`, citation: cite(source) };
+      });
+      sections.push({ id: story.id, title: story.headline, titleCitation, evidence,
+        reason: `Selected for ${story.topics.filter(t => settings.topics.includes(t)).join(' and ').toLowerCase()}.`,
+        note: evidence.length ? '' : 'Headline-only coverage: no short supporting extract is available. Read the original article for details.',
+        related: story.sources.filter(s => s.id !== lead.id),
+        question: settings.level === 'advanced' ? lens.question : '',
+      });
+    }
+    const dateLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${material.date}T12:00:00Z`));
+    const makeOpening = () => sections.length
+      ? `Here is your ${dateLabel} briefing for ${material.profileName.replace(/^The /, '').toLowerCase()}. Your focus is ${settings.topics.join(' and ').toLowerCase()}. ${sections.length === 1 ? 'One story matches' : `${sections.length} stories match`} this selection. ${settings.level === 'beginner' ? 'Start with a short background explanation, then read what the sources report.' : settings.level === 'advanced' ? 'Review the reported details and the questions to check against the original sources.' : 'Follow the key headlines and their attributed supporting details.'}`
+      : '';
+    const countWords = () => [makeOpening(), background ? `Background: ${background.text}` : '', ...sections.flatMap(s => [s.title, ...s.evidence.map(e => e.text), s.note, s.reason, s.question ? `For your review: ${s.question}` : ''])].filter(Boolean).join(' ').trim().split(/\s+/).filter(Boolean).length;
+    while (sections.length > 1 && countWords() > Number(settings.minutes) * 150) sections.pop();
+    const used = new Set(sections.flatMap(s => [s.titleCitation, ...s.evidence.map(e => e.citation)]));
+    const retained = sources.filter(s => used.has(s.number));
+    const renumber = new Map(retained.map((s, i) => [s.number, i + 1]));
+    retained.forEach((s, i) => { s.number = i + 1; }); sources.splice(0, sources.length, ...retained);
+    sections.forEach(s => { s.titleCitation = renumber.get(s.titleCitation); s.evidence.forEach(e => { e.citation = renumber.get(e.citation); }); });
+    const opening = makeOpening(), wordCount = countWords();
+    const seconds = sections.length ? Math.ceil(wordCount / 150 * 60) : 0;
+    return { date: material.date, dateLabel, profileName: material.profileName, level: levels[settings.level], topics: settings.topics.slice(), targetMinutes: Number(settings.minutes), opening, background, sections, sources, wordCount, seconds,
+      availableStories: eligible.length, demo: material.demo,
+      notice: 'Source-based draft: headlines and short quotations are assembled locally using your preferences. Background and review questions are editorial prompts, not claims from the articles. Story groups need review. No AI rewriting, translation or audio is included.',
+    };
+  }
+  function asText(draft) {
+    return ['MYMORNING · YOUR PERSONAL BRIEFING', `${draft.dateLabel} | ${draft.profileName} | ${draft.level}`, draft.demo ? 'FICTIONAL DEMO DATA — not real news.' : '', draft.opening,
+      draft.background ? `BACKGROUND\n${draft.background.text}` : '',
+      ...draft.sections.map(s => [s.title + ` [${s.titleCitation}]`, ...s.evidence.map(e => `${e.text} [${e.citation}]`), s.note, s.reason, s.question ? `For your review: ${s.question}` : ''].filter(Boolean).join('\n')),
+      'SOURCES', ...draft.sources.map(s => `[${s.number}] ${s.outlet}: ${s.headline}\n${s.url}`),
+      'METHOD', draft.notice].filter(Boolean).join('\n\n');
+  }
+  const api = { compose, asText };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.Briefing = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+/* Voice review first. Provider calls happen only after explicit button clicks. */
+(function () {
+  'use strict';
+  const el = id => document.getElementById(id);
+  const voiceState = { config: null, approved: false, busy: false, draft: null, revision: 0, previewURL: null, audioURL: null };
+  const presets = { neutral: { speed: 1, stability: .65, style: .05 }, warm: { speed: .98, stability: .45, style: .2 }, energetic: { speed: 1.08, stability: .3, style: .35 } };
+  const fields = { speed: 'voice-speed', stability: 'voice-stability', similarity_boost: 'voice-similarity', style: 'voice-style' };
+  function element(tag, className, text) {
+    const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node;
+  }
+  function settings() {
+    const values = { voiceId: el('voice-id').value.trim(), tone: el('voice-tone').value, use_speaker_boost: el('voice-boost').checked };
+    for (const [key, id] of Object.entries(fields)) values[key] = Number(el(id).value);
+    return values;
+  }
+  function validVoice() { return /^[A-Za-z0-9_-]{1,80}$/.test(settings().voiceId) && !/^sk[_-]/i.test(settings().voiceId); }
+  function releaseAudio() {
+    if (voiceState.audioURL) { URL.revokeObjectURL(voiceState.audioURL); voiceState.audioURL = null; }
+  }
+  function invalidateDraft() {
+    voiceState.revision++; voiceState.draft = null;
+    el('ai-result').querySelectorAll('audio').forEach(audio => audio.pause());
+    el('ai-result').replaceChildren(); el('ai-result').hidden = true; releaseAudio(); update();
+  }
+  function displayValues() {
+    for (const [key, id] of Object.entries(fields)) el(id + '-value').textContent = key === 'speed' ? Number(el(id).value).toFixed(2) + '×' : Math.round(Number(el(id).value) * 100) + '%';
+  }
+  function changed() {
+    voiceState.approved = false; el('voice-reviewed').checked = false;
+    const player = el('voice-sample-player'); player.pause(); player.hidden = true; player.removeAttribute('src');
+    if (voiceState.previewURL) { URL.revokeObjectURL(voiceState.previewURL); voiceState.previewURL = null; }
+    el('voice-status').textContent = 'Settings changed. Review and save this selection again.';
+    el('voice-request-status').textContent = '';
+    displayValues(); invalidateDraft(); update();
+  }
+  function update() {
+    const c = voiceState.config;
+    el('load-voices').disabled = !c?.elevenLabsConfigured || voiceState.busy;
+    el('preview-voice').disabled = !c?.elevenLabsConfigured || !validVoice() || voiceState.busy;
+    el('save-voice').disabled = !validVoice() || !el('voice-reviewed').checked || voiceState.busy;
+    let reason = 'Checking local integration setup…';
+    if (c?.staticPreview) reason = 'Public preview: review and save voice settings here. Connect your keys in the local app to audition the voice.';
+    else if (c?.reviewOnly) reason = 'Full generation is paused for your voice review. Saving a voice does not enable it.';
+    else if (c && !c.sourceProcessingAllowed) reason = 'External processing of real articles is off. Use the fictional demo to test the integration.';
+    else if (c && !c.openaiConfigured) reason = 'Connect your OpenAI API key locally to write with AI.';
+    else if (c && !voiceState.approved) reason = 'Review and save your voice preferences before writing with AI.';
+    else if (c) reason = 'Ready to write with AI. You will review the script before requesting audio.';
+    el('ai-availability').textContent = reason;
+    const selection = window.getBriefingSelection?.();
+    el('write-ai').disabled = !c || !c.generationEnabled || !c.sourceProcessingAllowed || !c.openaiConfigured || !voiceState.approved || !selection?.topics.length || voiceState.busy;
+    const audioButton = el('generate-ai-audio');
+    if (audioButton) audioButton.disabled = !c?.elevenLabsConfigured || !voiceState.approved || !el('script-reviewed')?.checked || voiceState.busy;
+  }
+  async function loadStatus() {
+    try {
+      const response = await demoFetch('/api/ai/status'); if (!response.ok) throw new Error();
+      voiceState.config = await response.json();
+      const c = voiceState.config;
+      el('voice-connection').textContent = c.staticPreview ? 'PUBLIC REVIEW PREVIEW · Settings can be reviewed here. Voice auditions and AI writing require the local server and your API keys. No provider is connected to this public page.'
+        : `LOCAL SETUP · OpenAI key: ${c.openaiConfigured ? 'present' : 'not set'} · ElevenLabs key: ${c.elevenLabsConfigured ? 'present' : 'not set'} · ${c.reviewOnly ? 'Full generation PAUSED for voice review.' : 'Generation enabled; voice and script review are still required.'} Key presence does not verify account access or credits.`;
+      if (c.sampleText) el('voice-sample-text').textContent = c.sampleText;
+    } catch (error) { el('voice-connection').textContent = 'Could not check integration setup. Reload the local app and try again.'; }
+    update();
+  }
+  async function api(path, body) {
+    const response = await demoFetch(path, body === undefined ? {} : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    if (!response.ok) {
+      let message = 'The request could not be completed. No automatic retry was made.';
+      try { message = (await response.json()).error || message; } catch (_) { /* Keep the plain error message. */ }
+      throw new Error(message);
+    }
+    return response;
+  }
+  el('voice-tone').addEventListener('change', () => { const preset = presets[el('voice-tone').value]; for (const [key, value] of Object.entries(preset)) el(fields[key]).value = value; changed(); });
+  for (const id of [...Object.values(fields), 'voice-id', 'voice-boost']) el(id).addEventListener('input', changed);
+  el('voice-list').addEventListener('change', () => { el('voice-id').value = el('voice-list').value; changed(); });
+  el('voice-reviewed').addEventListener('change', () => { if (!el('voice-reviewed').checked) { voiceState.approved = false; invalidateDraft(); } update(); });
+  el('voice-form').addEventListener('submit', event => event.preventDefault());
+  el('save-voice').addEventListener('click', () => {
+    if (!validVoice() || !el('voice-reviewed').checked) return;
+    voiceState.approved = true;
+    try { localStorage.setItem('sourcera-voice-v1', JSON.stringify(settings())); el('voice-status').textContent = 'Voice preferences saved in this browser. Full generation is still controlled separately.'; }
+    catch (_) { el('voice-status').textContent = 'Voice preferences saved for this session. Browser storage is unavailable.'; }
+    update();
+  });
+  el('load-voices').addEventListener('click', async () => {
+    voiceState.busy = true; update(); el('voice-request-status').textContent = 'Loading your ElevenLabs voices…';
+    try {
+      const response = await api('/api/ai/voices'); const data = await response.json();
+      const first = element('option', '', 'Choose a voice'); first.value = '';
+      el('voice-list').replaceChildren(first, ...data.voices.map(voice => {
+        const labels = [voice.labels?.accent, voice.labels?.gender].filter(Boolean).join(' · ');
+        const option = element('option', '', `${voice.name}${labels ? ' · ' + labels : ''}`); option.value = voice.id; return option;
+      }));
+      el('voice-request-status').textContent = data.voices.length ? (data.hasMore ? 'First 100 voices loaded. Enter a Voice ID manually if yours is not listed.' : 'Voices loaded. Choose one to start your audition.') : 'No voices were returned. Add a voice in ElevenLabs or enter its Voice ID.';
+    } catch (error) { el('voice-request-status').textContent = error.message; }
+    finally { voiceState.busy = false; update(); }
+  });
+  el('preview-voice').addEventListener('click', async () => {
+    if (!validVoice() || voiceState.busy) return;
+    const revision = voiceState.revision; voiceState.busy = true; update(); el('voice-request-status').textContent = 'Creating your short voice audition…';
+    try {
+      const response = await api('/api/ai/preview', { voice: settings() }); const blob = await response.blob();
+      if (revision !== voiceState.revision) { el('voice-request-status').textContent = 'Settings changed during generation. Request a new sample for the current settings.'; return; }
+      if (voiceState.previewURL) URL.revokeObjectURL(voiceState.previewURL);
+      voiceState.previewURL = URL.createObjectURL(blob); const player = el('voice-sample-player'); player.src = voiceState.previewURL; player.hidden = false;
+      el('voice-request-status').textContent = 'Your sample is ready. Press play, compare and adjust.';
+    } catch (error) { el('voice-request-status').textContent = error.message; }
+    finally { voiceState.busy = false; update(); }
+  });
+  function link(source, text) {
+    const a = element('a', '', text); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a;
+  }
+  function renderAI(draft) {
+    const result = el('ai-result'); result.hidden = false; result.replaceChildren();
+    const heading = element('h2', '', 'Your AI-written briefing'); heading.id = 'ai-result-title'; heading.tabIndex = -1;
+    result.append(element('div', 'eyebrow', 'REVIEW THE SCRIPT · AUDIO COMES NEXT'), heading, element('p', 'briefing-date', `${draft.date} · ${draft.profileName} · About ${draft.estimatedSeconds} seconds at your chosen pace`));
+    if (draft.demo) result.append(element('p', 'story-notice', 'FICTIONAL DEMO · This AI-written script uses invented news.'));
+    result.append(element('p', 'detail-disclaimer', draft.notice));
+    const numbers = new Map(draft.sources.map((source, i) => [source.id, i + 1]));
+    draft.paragraphs.forEach(paragraph => {
+      const p = element('p', 'briefing-evidence', paragraph.text);
+      paragraph.source_ids.forEach(id => { const a = link(draft.sources.find(s => s.id === id), `[${numbers.get(id)}]`); a.className = 'briefing-citation'; p.append(document.createTextNode(' '), a); }); result.append(p);
+    });
+    result.append(element('h3', '', 'Sources to review')); const list = element('ol');
+    draft.sources.forEach(source => { const li = element('li'); li.append(link(source, `${source.outlet}: ${source.headline}`)); list.append(li); }); result.append(list);
+    const label = element('label', 'voice-check'), check = element('input'); check.type = 'checkbox'; check.id = 'script-reviewed';
+    label.append(check, element('span', '', 'I have reviewed this script and its sources.')); check.addEventListener('change', update);
+    const generate = element('button', 'primary-button', 'Generate audio with ElevenLabs'); generate.id = 'generate-ai-audio'; generate.type = 'button'; generate.disabled = true;
+    const status = element('p', 'field-help'); status.id = 'ai-audio-status'; status.setAttribute('role', 'status');
+    generate.addEventListener('click', async () => {
+      if (!check.checked || voiceState.busy || voiceState.draft?.id !== draft.id) return;
+      const revision = voiceState.revision; voiceState.busy = true; update(); status.textContent = 'Generating audio from the reviewed script…';
+      try {
+        const response = await api('/api/ai/audio', { draftId: draft.id, voice: settings(), voiceReviewed: voiceState.approved, scriptReviewed: check.checked }); const blob = await response.blob();
+        if (revision !== voiceState.revision) return;
+        releaseAudio(); voiceState.audioURL = URL.createObjectURL(blob);
+        const output = el('ai-audio-output'); output.replaceChildren();
+        const player = element('audio'); player.controls = true; player.src = voiceState.audioURL; player.setAttribute('aria-label', 'AI-generated briefing narrated by ElevenLabs');
+        const download = element('a', 'source-link', 'Download audio (.mp3)'); download.href = voiceState.audioURL; download.download = `mymorning-${draft.date}.mp3`; output.append(player, download); status.textContent = 'Your AI-generated audio is ready. Press play to listen.';
+      } catch (error) { if (revision === voiceState.revision) status.textContent = error.message; }
+      finally { voiceState.busy = false; update(); }
+    });
+    const audioOutput = element('div'); audioOutput.id = 'ai-audio-output';
+    result.append(label, generate, element('p', 'field-help', 'This separate request uses ElevenLabs credits and sends only the reviewed script. The estimated duration may differ from the final recording.'), status, audioOutput);
+    update(); heading.focus();
+  }
+  el('write-ai').addEventListener('click', async () => {
+    if (el('write-ai').disabled) return;
+    const selection = window.getBriefingSelection(); invalidateDraft(); const revision = voiceState.revision;
+    voiceState.busy = true; update(); el('ai-availability').textContent = 'Writing your briefing with AI… You will review the script before audio is generated.';
+    try {
+      const response = await api('/api/ai/write', { ...selection, voice: settings(), voiceReviewed: voiceState.approved }); const draft = await response.json();
+      if (revision !== voiceState.revision) return;
+      voiceState.draft = draft; renderAI(draft);
+    } catch (error) { if (revision === voiceState.revision) { const p = element('p', 'story-notice', error.message); el('ai-result').replaceChildren(p); el('ai-result').hidden = false; } }
+    finally { voiceState.busy = false; update(); }
+  });
+  try {
+    const saved = JSON.parse(localStorage.getItem('sourcera-voice-v1') || 'null');
+    if (saved && /^[A-Za-z0-9_-]{1,80}$/.test(saved.voiceId) && presets[saved.tone]) {
+      el('voice-id').value = saved.voiceId; el('voice-tone').value = saved.tone;
+      for (const [key, id] of Object.entries(fields)) if (typeof saved[key] === 'number' && Number.isFinite(saved[key])) el(id).value = saved[key];
+      el('voice-boost').checked = saved.use_speaker_boost === true;
+      el('voice-status').textContent = 'Saved settings restored. Review them again before full generation.';
+    }
+  } catch (_) { /* Local storage is optional; no keys are ever stored here. */ }
+  window.VoiceStudio = { invalidateDraft, update };
+  el('refresh-voice-connection').addEventListener('click', loadStatus);
+  displayValues(); loadStatus();
+})();
+
+const $ = (id) => document.getElementById(id);
+const names = { en: 'English', de: 'German', nl: 'Dutch' };
+const state = { defaultDate: '', page: 1, pages: 1, controller: null, request: 0, view: 'articles', profile: '', pendingProfile: '', profiles: [] };
+const briefingState = { material: null, request: 0, draft: null, workspace: 'briefing' };
+const formatter = new Intl.NumberFormat('en-GB');
+const dayFormat = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const timeFormat = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+const readableDate = (date) => dayFormat.format(new Date(`${date}T12:00:00Z`));
+
+function option(value, label) {
+  const el = document.createElement('option'); el.value = value; el.textContent = label; return el;
+}
+function node(tag, className, content) {
+  const el = document.createElement(tag); if (className) el.className = className;
+  if (content !== undefined) el.textContent = content; return el;
+}
+function reset() {
+  $('date').value = state.defaultDate; $('briefing-date').value = state.defaultDate; $('language').value = ''; $('outlet').value = ''; $('search').value = ''; state.page = 1; refresh(); loadBriefingMaterial();
+}
+function empty(title, description, button, action) {
+  const box = node('div', 'empty'); box.append(node('h3', '', title), node('p', '', description));
+  const control = node('button', '', button); control.type = 'button'; control.addEventListener('click', action); box.append(control); $('results').replaceChildren(box);
+}
+function profileReason(item, card) {
+  if (state.profile && item.relevance) card.append(node('p', item.relevance.score > 0 ? 'relevance-note' : 'detail-disclaimer', item.relevance.score > 0 ? `Why it’s here: ${item.relevance.reason}` : item.relevance.reason));
+}
+function article(item) {
+  const card = node('article', 'article');
+  const meta = node('div', 'article-meta');
+  const mark = node('span', 'outlet-mark', item.outlet === 'International Business Times UK' ? 'IB' : item.outlet.slice(0, 2).toUpperCase()); mark.setAttribute('aria-hidden', 'true');
+  meta.append(mark, node('span', 'outlet', item.outlet), node('span', 'language-badge', names[item.language] || item.language), node('time', '', `${timeFormat.format(new Date(item.date))} UTC`));
+  meta.querySelector('time').dateTime = item.date;
+  const bottom = node('div', 'article-bottom');
+  if (item.url) {
+    const link = node('a', 'source-link', 'Read original article'); link.href = item.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `Read original article: ${item.headline} (opens in a new tab)`);
+    bottom.append(link, node('span', 'source-host', new URL(item.url).hostname.replace(/^www\./, '')));
+  }
+  card.append(meta, node('h3', '', item.headline)); profileReason(item, card); card.append(bottom); return card;
+}
+function story(item) {
+  const card = node('article', 'article story-card');
+  const meta = node('div', 'article-meta');
+  meta.append(node('span', 'story-badge', `${item.articleCount} ${item.articleCount === 1 ? 'article' : 'articles'}`), node('span', '', `${item.publisherCount} ${item.publisherCount === 1 ? 'publisher' : 'publishers'}`), node('span', '', item.languages.map(l => names[l] || l).join(' · ')));
+  card.append(meta, node('h3', '', item.headline)); profileReason(item, card);
+  if (item.details.length) {
+    const details = node('div', 'reported-details'); details.append(node('h4', '', 'Reported details'));
+    const list = node('ul', '');
+    item.details.forEach(detail => {
+      const li = node('li', ''); li.append(node('q', '', detail.quote));
+      const source = node('a', 'detail-source', detail.outlet); source.href = detail.url; source.target = '_blank'; source.rel = 'noopener noreferrer'; li.append(source); list.append(li);
+    });
+    details.append(list, node('p', 'detail-disclaimer', 'Short quotations from the reporting. Check the original source before using a claim in a briefing.')); card.append(details);
+  } else {
+    card.append(node('p', 'detail-disclaimer', 'No short numeric detail was extracted. Open the sources to review this story.'));
+  }
+  const sources = node('details', 'story-sources'); sources.append(node('summary', '', `View ${item.articleCount} source ${item.articleCount === 1 ? 'article' : 'articles'}`));
+  const list = node('ul', '');
+  item.sources.forEach(source => {
+    const li = node('li', ''); li.append(node('span', 'source-meta', `${source.outlet} · ${names[source.language] || source.language} · ${timeFormat.format(new Date(source.date))} UTC`));
+    const link = node('a', '', source.headline); link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; li.append(link); list.append(li);
+  });
+  sources.append(list); card.append(sources); return card;
+}
+function changeView(view) {
+  state.view = view; state.page = 1;
+  $('articles-view').classList.toggle('active', view === 'articles'); $('stories-view').classList.toggle('active', view === 'stories');
+  $('articles-view').setAttribute('aria-pressed', String(view === 'articles')); $('stories-view').setAttribute('aria-pressed', String(view === 'stories'));
+  $('story-notice').hidden = view !== 'stories';
+  $('count-label').textContent = view === 'stories' ? 'Stories in your selection' : 'Articles in your selection';
+  $('news-heading').textContent = view === 'stories' ? 'The stories behind the headlines' : 'The day’s news';
+  $('sort-label').textContent = state.profile ? 'Selected for your profile' : (view === 'stories' ? 'Most coverage first' : 'Newest first');
+  $('grouping-label').textContent = view === 'stories' ? 'Related coverage, connected across languages' : 'Explore individual source articles';
+  refresh();
+}
+async function refresh() {
+  if (!state.profile) return;
+  const request = ++state.request;
+  if (state.controller) state.controller.abort(); state.controller = new AbortController();
+  $('results').setAttribute('aria-busy', 'true'); $('results').replaceChildren(); $('pagination').hidden = true;
+  $('status').textContent = state.view === 'stories' ? 'Grouping the day’s coverage…' : 'Finding articles…'; $('count').textContent = '—'; $('outlet-count').textContent = '—'; $('language-count').textContent = '—'; $('day-context').textContent = '';
+  $('date-label').textContent = readableDate($('date').value).toUpperCase();
+  const params = new URLSearchParams({ date: $('date').value, language: $('language').value, outlet: $('outlet').value, q: $('search').value, page: state.page, profile: state.profile });
+  try {
+    const response = await demoFetch(`/api/${state.view}?${params}`, { signal: state.controller.signal });
+    if (!response.ok) throw new Error('Could not load your selection.'); const data = await response.json();
+    if (request !== state.request) return;
+    state.page = data.page; state.pages = data.pages;
+    $('count').textContent = formatter.format(data.total); $('outlet-count').textContent = data.outletCount; $('language-count').textContent = data.languageCount;
+    $('day-context').textContent = `${data.dayTotal} articles before personalisation`;
+    const unit = state.view === 'stories' ? 'stories' : 'articles';
+    $('status').textContent = data.total ? `Showing ${(data.page - 1) * data.pageSize + 1}–${Math.min(data.page * data.pageSize, data.total)} of ${data.total} ${unit}${state.view === 'stories' ? ` · ${data.articleTotal} matching articles · Groups need review` : ' · Relevant to your profile · Original-language headlines'}` : `0 ${unit} in this selection`;
+    if (!data.items.length) empty(`No ${unit} match these filters`, 'No relevant coverage matches your current selection. Try another date, clear the filters, or change your profile.', 'Reset filters', reset);
+    else $('results').replaceChildren(...data.items.map(state.view === 'stories' ? story : article));
+    $('pagination').hidden = data.pages <= 1; $('page-label').textContent = `Page ${data.page} of ${data.pages}`; $('previous').disabled = data.page <= 1; $('next').disabled = data.page >= data.pages;
+  } catch (error) {
+    if (error.name === 'AbortError' || request !== state.request) return;
+    $('status').textContent = 'Could not load the articles.';
+    empty('Could not connect to the collection', 'Make sure the local server is still running, then try again.', 'Try again', refresh);
+  } finally { if (request === state.request) $('results').setAttribute('aria-busy', 'false'); }
+}
+async function initialize() {
+  try {
+    const response = await demoFetch('/api/options'); if (!response.ok) throw new Error('Unavailable'); const options = await response.json();
+    state.defaultDate = options.defaultDate;
+    if (options.demo) {
+      $('demo-notice').hidden = false;
+      $('dataset-mode').textContent = 'Fictional demo data';
+      document.querySelector('.license-note').textContent = 'Fictional sample articles for development. No Newstex content is included.';
+      document.querySelector('.dataset-note p').textContent = `${options.outlets.length} sources · ${options.languages.length} languages`;
+    }
+    $('date').replaceChildren(...options.dates.map(d => option(d.date, readableDate(d.date)))); $('date').value = state.defaultDate;
+    $('briefing-date').replaceChildren(...options.dates.map(d => option(d.date, readableDate(d.date)))); $('briefing-date').value = state.defaultDate; $('briefing-date').disabled = false;
+    $('language').append(...options.languages.map(l => option(l, names[l] || l)));
+    $('outlet').append(...options.outlets.map(o => option(o, o)));
+    $('dataset-total').textContent = `${formatter.format(options.total)} articles`;
+    ['date', 'language', 'outlet', 'search'].forEach(id => { $(id).disabled = false; });
+    if (state.pendingProfile) $('start-exploring').disabled = false;
+    if (state.profile) { await refresh(); await loadBriefingMaterial(); }
+  } catch (error) {
+    $('profile-error').textContent = 'Could not load the collection. Please reload the page to try again.';
+    $('status').textContent = 'The collection is unavailable.'; $('results').setAttribute('aria-busy', 'false');
+    empty('Could not load the collection', 'Make sure the local server is still running.', 'Try again', () => location.reload());
+  }
+}
+$('articles-view').addEventListener('click', () => changeView('articles'));
+$('stories-view').addEventListener('click', () => changeView('stories'));
+['date', 'language', 'outlet'].forEach(id => $(id).addEventListener('change', () => { state.page = 1; refresh(); if (id === 'date') { $('briefing-date').value = $('date').value; loadBriefingMaterial(); } }));
+let debounce;
+$('search').addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(() => { state.page = 1; refresh(); }, 200); });
+$('reset').addEventListener('click', () => { if (state.defaultDate) reset(); });
+for (const [id, delta] of [['previous', -1], ['next', 1]]) $(id).addEventListener('click', async () => { state.page += delta; await refresh(); $('news-heading').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+async function loadProfiles() {
+  try {
+    const response = await demoFetch('/api/profiles'); if (!response.ok) throw new Error('Unavailable');
+    const data = await response.json(); state.profiles = data.profiles;
+    const cards = state.profiles.map(profile => {
+      const label = node('label', 'profile-choice');
+      const input = document.createElement('input'); input.type = 'radio'; input.name = 'listener-profile'; input.value = profile.id;
+      input.addEventListener('change', () => {
+        state.pendingProfile = profile.id;
+        $('selection-status').textContent = `Selected: ${profile.name}`; $('start-exploring').disabled = !state.defaultDate;
+      });
+      const body = node('span', 'profile-body');
+      body.append(node('span', 'profile-symbol', profile.symbol), node('strong', '', profile.name), node('span', 'profile-description', profile.description));
+      const tags = node('span', 'profile-topics'); profile.topics.forEach(t => tags.append(node('span', '', t))); body.append(tags);
+      label.append(input, body); return label;
+    });
+    $('profile-options').replaceChildren(...cards);
+  } catch (error) {
+    $('profile-error').textContent = 'Could not load listener profiles. Please reload the page to try again.';
+  }
+}
+$('start-exploring').addEventListener('click', () => {
+  const profile = state.profiles.find(p => p.id === state.pendingProfile); if (!profile) return;
+  state.profile = profile.id; state.page = 1;
+  $('current-profile').textContent = profile.name; $('current-interests').textContent = profile.topics.join(' · ');
+  $('onboarding').hidden = true; $('explorer').hidden = false;
+  document.querySelector('.skip').href = '#briefing-title';
+  changeView(state.view); openWorkspace(location.hash === '#voice' ? 'voice' : 'briefing'); loadBriefingMaterial(); $(location.hash === '#voice' ? 'voice-title' : 'briefing-title').focus();
+});
+$('change-profile').addEventListener('click', () => {
+  $('explorer').hidden = true; $('onboarding').hidden = false; $('welcome-title').focus();
+  document.querySelector('.skip').href = '#welcome-title';
+});
+
+function openWorkspace(view) {
+  briefingState.workspace = view;
+  $('briefing-builder').hidden = view !== 'briefing'; $('source-explorer').hidden = view !== 'sources';
+  $('voice-studio').hidden = view !== 'voice';
+  for (const [id, active] of [['briefing-view', view === 'briefing'], ['voice-view', view === 'voice'], ['explore-view', view === 'sources']]) {
+    $(id).classList.toggle('active', active); $(id).setAttribute('aria-pressed', String(active));
+  }
+  document.querySelector('.skip').href = view === 'briefing' ? '#briefing-title' : view === 'voice' ? '#voice-title' : '#results';
+}
+function invalidateBriefing(message = 'Preferences changed. Create a new briefing to apply them.') {
+  window.VoiceStudio?.invalidateDraft();
+  briefingState.draft = null; $('briefing-result').hidden = true; $('briefing-result').replaceChildren(); $('briefing-placeholder').hidden = false;
+  $('briefing-status').textContent = message;
+}
+async function loadBriefingMaterial() {
+  const request = ++briefingState.request;
+  briefingState.material = null; $('generate-briefing').disabled = true;
+  invalidateBriefing('Finding relevant coverage for your profile…'); $('briefing-topics').replaceChildren();
+  if (!state.profile || !$('briefing-date').value || $('briefing-date').disabled) return;
+  try {
+    const response = await demoFetch(`/api/briefing-material?${new URLSearchParams({ date: $('briefing-date').value, profile: state.profile })}`);
+    if (!response.ok) throw new Error('Could not prepare your briefing sources.');
+    const material = await response.json(); if (request !== briefingState.request) return;
+    briefingState.material = material;
+    $('briefing-topics').replaceChildren(...material.topics.map(topic => {
+      const label = node('label', 'topic-choice'), input = node('input');
+      input.type = 'checkbox'; input.name = 'briefing-topic'; input.value = topic; input.checked = true;
+      label.append(input, node('span', '', topic)); return label;
+    }));
+    $('generate-briefing').disabled = false;
+    window.VoiceStudio?.update();
+    $('briefing-status').textContent = material.stories.length ? `${material.stories.length} relevant English-language ${material.stories.length === 1 ? 'story is' : 'stories are'} available. Ready when you are.` : 'No relevant English-language coverage on this date. Choose another date or profile.';
+  } catch (error) {
+    if (request !== briefingState.request) return;
+    $('briefing-status').textContent = 'Could not load briefing sources. Check the connection and try again.';
+    const retry = node('button', 'secondary-button', 'Retry loading sources'); retry.type = 'button'; retry.addEventListener('click', loadBriefingMaterial); $('briefing-topics').replaceChildren(retry);
+  }
+}
+function sourceLink(source, text, className = '') {
+  const a = node('a', className, text); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+  a.setAttribute('aria-label', `${text}: ${source.outlet} (opens in a new tab)`); return a;
+}
+function citation(draft, number) {
+  return sourceLink(draft.sources.find(s => s.number === number), `[${number}]`, 'briefing-citation');
+}
+function renderBriefing(draft) {
+  const result = $('briefing-result'); result.replaceChildren(); result.hidden = false; $('briefing-placeholder').hidden = true;
+  const header = node('div', 'briefing-result-header');
+  const title = node('h2', '', 'Your morning, in focus.'); title.id = 'briefing-result-title'; title.tabIndex = -1;
+  header.append(node('div', 'eyebrow', 'MYMORNING · YOUR WRITTEN BRIEFING'), title, node('p', 'briefing-date', `${draft.dateLabel} · ${draft.profileName}`));
+  const badges = node('div', 'briefing-badges');
+  const duration = draft.seconds < 60 ? `${draft.seconds} sec read` : `${Math.floor(draft.seconds / 60)} min ${String(draft.seconds % 60).padStart(2, '0')} sec read`;
+  [draft.level, 'English', duration, `${draft.sources.length} cited ${draft.sources.length === 1 ? 'article' : 'articles'}`].forEach(t => badges.append(node('span', '', t)));
+  header.append(badges); result.append(header);
+  if (draft.demo) result.append(node('p', 'story-notice', 'FICTIONAL DEMO · This briefing uses invented sample news, not real reporting.'));
+  if (!draft.sections.length) {
+    result.append(node('h3', '', 'No matching coverage'), node('p', '', 'No relevant English-language stories match your profile and chosen topics on this date. Change the date, topics or listener profile. We will not fill your briefing with unrelated news.'));
+    return;
+  }
+  result.append(node('p', 'briefing-opening', draft.opening));
+  if (draft.seconds < draft.targetMinutes * 60) result.append(node('p', 'coverage-note', `Your ${draft.targetMinutes}-minute budget is a maximum. This draft is shorter because we use only the matching coverage and short attributable extracts.`));
+  if (draft.background) {
+    const background = node('aside', 'briefing-background'); background.append(node('strong', '', 'Before you start · Background'), node('p', '', draft.background.text)); result.append(background);
+  }
+  draft.sections.forEach((section, index) => {
+    const block = node('section', 'briefing-story');
+    const heading = node('h3', '', section.title); heading.append(document.createTextNode(' '), citation(draft, section.titleCitation)); block.append(heading);
+    section.evidence.forEach(e => { const p = node('p', 'briefing-evidence', e.text); p.append(document.createTextNode(' '), citation(draft, e.citation)); block.append(p); });
+    if (section.note) block.append(node('p', 'detail-disclaimer', section.note));
+    block.append(node('p', 'relevance-note', section.reason));
+    if (section.question) { const p = node('p', 'briefing-question'); p.append(node('strong', '', 'For your review: '), document.createTextNode(section.question)); block.append(p); }
+    if (section.related.length) {
+      const related = node('details', 'story-sources'); related.append(node('summary', '', 'Explore related coverage · Original languages'));
+      related.append(node('p', 'detail-disclaimer', 'Suggested related articles. A translation is not an independent confirmation, and differences have not been reconciled.'));
+      const ul = node('ul'); section.related.forEach(s => { const li = node('li'); li.append(node('span', 'source-meta', `${s.outlet} · ${names[s.language] || s.language}`), sourceLink(s, s.headline)); ul.append(li); }); related.append(ul); block.append(related);
+    }
+    result.append(block);
+  });
+  const refs = node('section', 'briefing-references'); refs.append(node('h3', '', 'Your sources'));
+  const ol = node('ol'); draft.sources.forEach(s => {
+    const li = node('li'); li.append(sourceLink(s, s.headline), node('span', 'source-meta', `${s.outlet} · ${names[s.language] || s.language} · ${readableDate(s.day)}`)); ol.append(li);
+  }); refs.append(ol); result.append(refs);
+  const method = node('details', 'briefing-method'); method.append(node('summary', '', 'How this briefing was made'), node('p', '', draft.notice), node('p', '', 'Profile and topic selection use headline keywords. Beginner adds general background; Informed focuses on source details; Advanced includes more extracts when available and questions to investigate. Explorer publisher, language and search filters do not affect this briefing.'));
+  const download = node('button', 'secondary-button', 'Download briefing (.txt)'); download.type = 'button'; download.addEventListener('click', () => {
+    const url = URL.createObjectURL(new Blob([Briefing.asText(draft)], { type: 'text/plain;charset=utf-8' })); const a = node('a'); a.href = url; a.download = `mymorning-${draft.date}-${state.profile}.txt`; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  result.append(method, download);
+}
+$('briefing-view').addEventListener('click', () => openWorkspace('briefing'));
+$('voice-view').addEventListener('click', () => { openWorkspace('voice'); $('voice-title').focus(); });
+$('review-voice').addEventListener('click', () => { openWorkspace('voice'); $('voice-title').focus(); });
+$('explore-view').addEventListener('click', () => openWorkspace('sources'));
+$('briefing-date').addEventListener('change', () => { $('date').value = $('briefing-date').value; state.page = 1; refresh(); loadBriefingMaterial(); });
+$('briefing-form').addEventListener('change', e => { if (e.target.id !== 'briefing-date') invalidateBriefing(); });
+$('briefing-form').addEventListener('submit', e => {
+  e.preventDefault(); if (!briefingState.material) return;
+  const topics = Array.from(document.querySelectorAll('input[name="briefing-topic"]:checked'), el => el.value);
+  if (!topics.length) { $('briefing-status').textContent = 'Choose at least one topic before creating your briefing.'; document.querySelector('input[name="briefing-topic"]')?.focus(); return; }
+  try {
+    const draft = Briefing.compose(briefingState.material, { level: document.querySelector('input[name="knowledge"]:checked').value, minutes: Number($('briefing-duration').value), topics });
+    briefingState.draft = draft; renderBriefing(draft);
+    $('briefing-status').textContent = draft.sections.length ? `Your written briefing is ready. ${draft.sections.length} ${draft.sections.length === 1 ? 'story' : 'stories'}, with source links.` : 'No matching stories. Try another date or topic.';
+    $('briefing-result-title').focus();
+  } catch (error) { $('briefing-status').textContent = 'Could not create your briefing. Please check your preferences and try again.'; }
+});
+window.getBriefingSelection = () => {
+  if (!briefingState.material) return null;
+  const topics = Array.from(document.querySelectorAll('input[name="briefing-topic"]:checked'), input => input.value);
+  return { date: $('briefing-date').value, profile: state.profile, settings: { level: document.querySelector('input[name="knowledge"]:checked').value, minutes: Number($('briefing-duration').value), topics }, topics };
+};
+initialize();
+loadProfiles();
+</script></body></html>
